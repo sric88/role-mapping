@@ -1,0 +1,184 @@
+{
+  "appgroup": [
+    {
+      "appName": "ABM",
+      "categories": ["Task", "Story", "Bugs & Defects"],
+      "scopes": ["Read", "Create", "Update/Change"],
+      "permissions": [
+        {
+          "id": "fc709f40-af77-4557-8dd0-eee113175a64",
+          "appId": "c32c4977-2619-465e-97e3-5d47ba3109b5",
+          "code": "bugs_read",
+          "category": "Bugs & Defects",
+          "scope": "Read",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [],
+          "dependentOn": ["d93271c6-e9d3-40bb-99b6-a383b30babb6"],
+          "isAssigned": false
+        },
+        {
+          "id": "d93271c6-e9d3-40bb-99b6-a383b30babb1",
+          "appId": "c8a22c7f-c934-41bb-a01b-ad1219113770",
+          "code": "Bugs_Update",
+          "category": "Bugs & Defects",
+          "scope": "Update/Change",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": ["fc709f40-af77-4557-8dd0-eee113175a64"],
+          "dependentOn": [],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "9b2c1bf7-7d20-4f9b-bf16-7cf61b1f686e",
+          "code": "Story_Read",
+          "category": "Story",
+          "scope": "Read",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [],
+          "dependentOn": [
+            "76d9158e-8a52-48b0-93a2-ca62c4cc8d11",
+            "e017d4b0-abba-46ef-9803-58c515d4a654"
+          ],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "f3d6094c-a72e-4116-a272-5e4d5ccaf38e",
+          "code": "Story_Create",
+          "category": "Story",
+          "scope": "Create",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": ["fc709f40-af77-4557-8dd0-eee113175a63"],
+          "dependentOn": ["e017d4b0-abba-46ef-9803-58c515d4a654"],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "b24a2f9b-9d35-4564-949a-e6c39ba60ee5",
+          "code": "Story_Update",
+          "category": "Story",
+          "scope": "Update/Change",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [
+            "fc709f40-af77-4557-8dd0-eee113175a63",
+            "76d9158e-8a52-48b0-93a2-ca62c4cc8d11"
+          ],
+          "dependentOn": [],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "3d4b3ad4-6d7d-4584-adfe-ecd7c9e06844",
+          "code": "Task_Read",
+          "category": "Task",
+          "scope": "Read",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [],
+          "dependentOn": ["1393cfcf-7370-4756-a6f2-53ed8c29164e"],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "fc483873-a238-409c-a5ec-579609f13338",
+          "code": "Task_Create",
+          "category": "Task",
+          "scope": "Create",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": ["28e87aff-a6dc-4249-ba37-025410411368"],
+          "dependentOn": [],
+          "isAssigned": false
+        }
+      ]
+    },
+    {
+      "appName": "Expense",
+      "categories": ["Task", "Story", "Bugs & Defects"],
+      "scopes": ["Read", "Create", "Update/Change"],
+      "permissions": [
+        {
+          "id": "fc709f40-af77-4557-8dd0-eee113175a63",
+          "appId": "c32c4977-2619-465e-97e3-5d47ba3109b5",
+          "code": "bugs_read",
+          "category": "Bugs & Defects",
+          "scope": "Read",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [],
+          "dependentOn": ["d93271c6-e9d3-40bb-99b6-a383b30babb6"],
+          "isAssigned": false
+        },
+        {
+          "id": "d93271c6-e9d3-40bb-99b6-a383b30babb6",
+          "appId": "c8a22c7f-c934-41bb-a01b-ad1219113770",
+          "code": "Bugs_Update",
+          "category": "Bugs & Defects",
+          "scope": "Update/Change",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": ["fc709f40-af77-4557-8dd0-eee113175a63"],
+          "dependentOn": [],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "9b2c1bf7-7d20-4f9b-bf16-7cf61b1f686e",
+          "code": "Story_Read",
+          "category": "Story",
+          "scope": "Read",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [],
+          "dependentOn": [
+            "76d9158e-8a52-48b0-93a2-ca62c4cc8d11",
+            "e017d4b0-abba-46ef-9803-58c515d4a654"
+          ],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "f3d6094c-a72e-4116-a272-5e4d5ccaf38e",
+          "code": "Story_Create",
+          "category": "Story",
+          "scope": "Create",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": ["fc709f40-af77-4557-8dd0-eee113175a63"],
+          "dependentOn": ["e017d4b0-abba-46ef-9803-58c515d4a654"],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "b24a2f9b-9d35-4564-949a-e6c39ba60ee5",
+          "code": "Story_Update",
+          "category": "Story",
+          "scope": "Update/Change",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [
+            "fc709f40-af77-4557-8dd0-eee113175a63",
+            "76d9158e-8a52-48b0-93a2-ca62c4cc8d11"
+          ],
+          "dependentOn": [],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "3d4b3ad4-6d7d-4584-adfe-ecd7c9e06844",
+          "code": "Task_Read",
+          "category": "Task",
+          "scope": "Read",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": [],
+          "dependentOn": ["1393cfcf-7370-4756-a6f2-53ed8c29164e"],
+          "isAssigned": false
+        },
+        {
+          "id": "28e87aff-a6dc-4249-ba37-025410411368",
+          "appId": "fc483873-a238-409c-a5ec-579609f13338",
+          "code": "Task_Create",
+          "category": "Task",
+          "scope": "Create",
+          "levelCodeId": "00000000-0000-0000-0000-000000000000",
+          "dependents": ["28e87aff-a6dc-4249-ba37-025410411368"],
+          "dependentOn": [],
+          "isAssigned": false
+        }
+      ]
+    }
+  ]
+}

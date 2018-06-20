@@ -1,0 +1,21 @@
+<table class="table bg-white mb-3" *ngFor="let section of appGroup">
+  <thead class="thead-light">
+    <tr class="table-primary">
+      <th [style.width.rem]="10">{{section.appName}}</th>
+      <th *ngFor="let scope of section.scopes" class="text-center">{{scope}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let category of section.categories;let x = index">
+      <th>{{category}}</th>
+      <th *ngFor="let scope of section.scopes;let x = index" class="text-center">
+        <span *ngFor="let permission of section.permissions;let y = index" class="text-center">
+
+          <span *ngIf="category === permission['category'] && scope === permission['scope']">
+            <input type="checkbox" [(ngModel)]="permission['isAssigned']" [checked]="permission['isAssigned']" (change)="changed(permission,section.permissions)">
+          </span>
+        </span>
+      </th>
+    </tr>
+  </tbody>
+</table>
